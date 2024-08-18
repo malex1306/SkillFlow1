@@ -1,22 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Home from './screens/home'
-import Quiz from './screens/quiz'
-import Result from './screens/result'
+import { StyleSheet, SafeAreaView } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import MyStack from './navigation/myStack';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Home/>
-    </View>
-  )
+    
+      <NavigationContainer>
+        <MyStack />
+      </NavigationContainer>
+    
+  );
 }
 
-export default App
+export default App;
 
 const styles = StyleSheet.create({
-  container:{
-    paddingTop: 40,
-    paddingHorizontal: 16,
-  }
-})
+  container: {
+    flex: 1,
+  },
+});
