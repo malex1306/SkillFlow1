@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   },
   question: {
     fontSize: 24,
-    fontWeight: '600',
+    fontWeight: '500',
   },
   option: {
     fontSize: 18,
